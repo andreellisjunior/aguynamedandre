@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Client</title>
+    <link rel="stylesheet" href="assets/css/client.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300|Exo:200|Julius+Sans+One|Jura:300"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Service</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="employer.html">Employer</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <div class="head">
+      <div class="bg-shade">
+        <div class="parallax">
+          <h1 class="headText">
+            KEEPING IT
+            <span>SIMPLE</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <section id="about" class="intro">
+        <hr />
+        <h1>Thank you for stopping by!</h1>
+        <hr />
+        <p>
+          My name is Andre, I specialize in delivering you the website you need.
+          I cater to all businesses big and small. If you need a simple design
+          or you a complete overhaul, I'm your guy!
+        </p>
+        <hr />
+        <div id="services" class="service-bg">
+          <div class="fade">
+            <h1>
+              HERE'S WHAT
+              <span>CAN BE DONE!</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="code">
+          <img src="assets/img/Code-Optimization-128x128.png" alt="" />
+          <p>Completely Create From Scratch</p>
+        </div>
+        <div class="code">
+          <img src="assets/img/light-bulb-14-128x128.png" alt="" />
+          <p>Bring New and Beautiful Ideas To life</p>
+        </div>
+        <div class="code">
+          <img src="assets/img/responsive-design-128x128.png" alt="" />
+          <p>Make everything about you look good on all devices</p>
+        </div>
+        <a class="grid-btn" href="examples.html"
+          >Here Are Some Examples/Templates</a
+        >
+      </section>
+      <hr />
+      <section id="contact" class="contact">
+        <div class="contact-bg">
+          <div class="fade">
+            <h1>
+              GOT <span>QUESTIONS?</span> NEED A FREE
+              <span>QUOTE?</span>
+            </h1>
+          </div>
+        </div>
+
+        <div class="form">
+          <div class="form-fade">
+            <h1>I'm Here For <span>You!</span></h1>
+            <form method="POST">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name *"
+                value="<?php $name ?>"
+                required
+              /><span class="error"><?php echo $nameErr; ?></span>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-Mail *"
+                value="<?php $email ?>"
+                required
+              /><span class="error"><?php echo $emailErr; ?></span>
+              <input
+                type="text"
+                id="msg"
+                name="msg"
+                placeholder="Message *"
+                value="<?php $msg ?>"
+                required
+              /><span class="error"><?php echo $msgErr; ?></span>
+              <button type="submit" name="submit" class="btn">
+                LET'S TALK
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div>
+          <i class="far fa-envelope"></i>
+          <p>contact@aguynamedandre.com</p>
+        </div>
+        <div>
+          <i class="fab fa-linkedin"></i>
+          <p>www.linkedin.com/in/andreellisjr/</p>
+        </div>
+        <div>
+          <i class="fab fa-instagram"></i>
+          <p>www.instagram.com/andreellisjr/</p>
+        </div>
+      </footer>
+    </div>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+      integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/J-Query/jquery-3.js"></script>
+    <script src="assets/js/J-Query/jquery.particleground.min.js"></script>
+    <script src="assets/js/client.js"></script>
+  </body>
+</html>
