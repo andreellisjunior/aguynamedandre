@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { frameworkData } from "../../constants/constants";
 
 const Frameworks = () => {
@@ -10,7 +9,7 @@ const Frameworks = () => {
             <div className="project-details-wrapper">
             {frameworkData.map(({ id, img, title, desc, year, special, link}) => (
                 <div className="project-details flex column" key={id}>
-                    <Image src={img} alt="Screenshot of my website's homepage" />
+                    <img src={img} alt="Screenshot of my website's homepage" />
                     <h5>{title}</h5>
                     <p><span style={{ color: "#00C1B6", fontWeight: "700"}}>Description:</span> {desc}</p>
                     <p><span style={{ color: "#00C1B6", fontWeight: "700"}}>Year Built:</span> {year}</p>
