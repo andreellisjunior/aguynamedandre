@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from 'react';
 import { useState } from "react";
 import Layout from "./Layout";
-const { motion } = require('framer-motion')
+// const { motion } = require('framer-motion')
 import { navContainer, navItem } from "./framer-animations/header";
 
 function Header() {
@@ -21,23 +21,23 @@ function Header() {
     }
 
   return <>
-        <motion.header variants={navContainer} initial="hidden" animate="visible" className="header flex center" id="header">
+        <header variants={navContainer} initial="hidden" animate="visible" className="header flex center" id="header">
         <Link href="/" passHref><motion.img variants={navItem} src="/assets/logo.svg" alt="My Logo" className="logo" /></Link>
         <nav className="nav">
             <ul>
-                <motion.li variants={navItem}><Link href="/">Home</Link></motion.li>
-                <motion.li variants={navItem}><Link href="/projects#about">About</Link></motion.li>
-                <motion.li variants={navItem}><Link href="/projects">Projects</Link></motion.li>
-                <motion.li variants={navItem}><Link href="mailto:andreellisjunior@gmail.com">Contract</Link></motion.li>
+                <li variants={navItem}><Link href="/">Home</Link></li>
+                <li variants={navItem}><Link href="/projects#about">About</Link></li>
+                <li variants={navItem}><Link href="/projects">Projects</Link></li>
+                <li variants={navItem}><Link href="mailto:andreellisjunior@gmail.com">Contract</Link></li>
             </ul>
-            <motion.a variants={navItem} href="#" className="ham-menu" onClick={() => {setShowMenu(!showMenu)}}>
+            <a variants={navItem} href="#" className="ham-menu" onClick={() => {setShowMenu(!showMenu)}}>
                 <span className="top"></span>
                 <span className="middle"></span>
                 <span className="bottom"></span>
-            </motion.a>
+            </a>
                 {mobileMenu}
         </nav>
-        </motion.header>
+        </header>
   </>
 
 }
