@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+const { motion } = require('framer-motion')
 import { buttonContainer, containerAnimation, item } from '../components/framer-animations/homepage'
 
 export default function Home() {

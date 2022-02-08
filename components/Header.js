@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from 'react';
 import { useState } from "react";
 import Layout from "./Layout";
-import { motion } from 'framer-motion'
+const { motion } = require('framer-motion')
 import { navContainer, navItem } from "./framer-animations/header";
 
 function Header() {

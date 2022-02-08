@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Layout from '../components/Layout'
-import { motion } from 'framer-motion'
+const { motion } = require('framer-motion')
 import '../styles/globals.scss'
 
 const pageAnimation = {
