@@ -22,7 +22,7 @@ function Header() {
 
   return <>
         <header variants={navContainer} initial="hidden" animate="visible" className="header flex center" id="header">
-        <Link href="/" passHref><motion.img variants={navItem} src="/assets/logo.svg" alt="My Logo" className="logo" /></Link>
+        <Link href="/" passHref><img variants={navItem} src="/assets/logo.svg" alt="My Logo" className="logo" /></Link>
         <nav className="nav">
             <ul>
                 <li variants={navItem}><Link href="/">Home</Link></li>
