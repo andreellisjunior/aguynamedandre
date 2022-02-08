@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React from 'react';
 import { useState } from "react";
 import Layout from "./Layout";
 import { motion } from 'framer-motion'
@@ -14,7 +15,7 @@ function Header() {
             <li><Link href="/">Home</Link></li>
             <li><Link href="/projects#about">About</Link></li>
             <li><Link href="/projects">Projects</Link></li>
-            <li><Link href="/contact">Contract</Link></li>
+            <li><Link href="mailto:andreellisjunior@gmail.com">Contract</Link></li>
         </ul>
     </div>
     }
@@ -27,7 +28,7 @@ function Header() {
                 <motion.li variants={navItem}><Link href="/">Home</Link></motion.li>
                 <motion.li variants={navItem}><Link href="/projects#about">About</Link></motion.li>
                 <motion.li variants={navItem}><Link href="/projects">Projects</Link></motion.li>
-                <motion.li variants={navItem}><Link href="/contact">Contract</Link></motion.li>
+                <motion.li variants={navItem}><Link href="mailto:andreellisjunior@gmail.com">Contract</Link></motion.li>
             </ul>
             <motion.a variants={navItem} href="#" className="ham-menu" onClick={() => {setShowMenu(!showMenu)}}>
                 <span className="top"></span>

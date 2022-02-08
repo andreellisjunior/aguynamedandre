@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Parallax } from 'react-parallax'
-import { useEffect } from 'react';
 import Frameworks from '../components/project-categories/Frameworks';
 import WordPress from '../components/project-categories/WordPress';
 import Shopify from '../components/project-categories/Shopify';
