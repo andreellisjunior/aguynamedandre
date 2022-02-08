@@ -21,7 +21,7 @@ function Header() {
 
   return <>
         <motion.header variants={navContainer} initial="hidden" animate="visible" className="header flex center" id="header">
-        <Link href="/"><motion.img variants={navItem} src="/assets/logo.svg" alt="My Logo" className="logo" /></Link>
+        <Link href="/" passHref><motion.img variants={navItem} src="/assets/logo.svg" alt="My Logo" className="logo" /></Link>
         <nav className="nav">
             <ul>
                 <motion.li variants={navItem}><Link href="/">Home</Link></motion.li>

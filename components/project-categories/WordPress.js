@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { wordpressData } from "../../constants/constants";
 
 const WordPress = () => {
@@ -8,7 +9,7 @@ const WordPress = () => {
         <div className="project-details-wrapper">
         {wordpressData.map(({ id, img, title, desc, year, special, link}) => (
             <div className="project-details flex column" key={id}>
-                <img src={img} alt="Screenshot of my website's homepage" />
+                <Image src={img} alt="Screenshot of my website's homepage" />
                 <h5>{title}</h5>
                 <p><span style={{ color: "#00C1B6", fontWeight: "700"}}>Description:</span> {desc}</p>
                 <p><span style={{ color: "#00C1B6", fontWeight: "700"}}>Year Built:</span> {year}</p>
