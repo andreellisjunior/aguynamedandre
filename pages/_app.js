@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Layout from '../components/Layout'
-// const { motion } = require('framer-motion')
+const { motion } = require('framer-motion')
 import '../styles/globals.scss'
 
 const pageAnimation = {
@@ -28,9 +28,9 @@ function MyApp({ Component, pageProps, router }) {
 
     </Head>
     <Header />
-    <div initial="pageInitial" animate="pageAnimate" variants={pageAnimation} key={router.route}>
+    <motion.div initial="pageInitial" animate="pageAnimate" variants={pageAnimation} key={router.route}>
         <Component {...pageProps} />
-    </div>
+    </motion.div>
   <Footer />
   </>
 }
