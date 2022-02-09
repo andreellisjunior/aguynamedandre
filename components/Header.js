@@ -15,7 +15,7 @@ function Header() {
             <li><Link href="/">Home</Link></li>
             <li><Link href="/projects#about">About</Link></li>
             <li><Link href="/projects">Projects</Link></li>
-            <li><Link href="mailto:andreellisjunior@gmail.com">Contract</Link></li>
+            <li><Link href="mailto:andreellisjunior@gmail.com">Contact</Link></li>
         </ul>
     </div>
     }

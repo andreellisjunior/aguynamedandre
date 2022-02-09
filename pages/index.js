@@ -17,7 +17,7 @@ export default function Home() {
             <motion.div variants={buttonContainer} className="transparent-btn-wrapper flex mobile-column">
                 <motion.div variants={item} className="transparent-btn"><Link href="/projects#about">About</Link></motion.div>
                 <motion.div variants={item} className="transparent-btn"><Link href="/projects">Projects</Link></motion.div>
-                <motion.div variants={item} className="transparent-btn"><Link href="#">Contact</Link></motion.div>
+                <motion.div variants={item} className="transparent-btn"><Link href="mailto:andreellisjunior@gmail.com">Contact</Link></motion.div>
             </motion.div>
         </motion.div>
     </>
