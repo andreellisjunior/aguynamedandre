@@ -19,9 +19,11 @@ const pageAnimation = {
 function MyApp({ Component, pageProps, router }) {
   return <>
   <Script
+    id="ga-script-0"
     strategy='lazyOnload'
     src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
     <Script
+        id="ga-script-1"
         strategy='lazyOnload'>
             {
                 `window.dataLayer = window.dataLayer || [];
