@@ -28,7 +28,7 @@ function Header() {
                 <motion.li variants={navItem}><Link href="/">Home</Link></motion.li>
                 <motion.li variants={navItem}><Link href="/projects#about">About</Link></motion.li>
                 <motion.li variants={navItem}><Link href="/projects">Projects</Link></motion.li>
-                <motion.li variants={navItem}><Link href="mailto:andreellisjunior@gmail.com">Contract</Link></motion.li>
+                <motion.li variants={navItem}><Link href="mailto:andreellisjunior@gmail.com">Contact</Link></motion.li>
             </ul>
             <motion.a variants={navItem} href="#" className="ham-menu" onClick={() => {setShowMenu(!showMenu)}}>
                 <span className="top"></span>
