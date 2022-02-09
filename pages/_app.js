@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps, router }) {
   return <>
   <Script
     strategy='lazyOnload'
-    src={`https://www.googletagmanager.com/gtag/js?id=UA-219904535-1`} />
+    src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
     <Script
         strategy='lazyOnload'>
             {
@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps, router }) {
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
 
-                gtag('config', 'UA-219904535-1');`
+                gtag('config', ${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS});`
             }
         </Script>
     <Head>
