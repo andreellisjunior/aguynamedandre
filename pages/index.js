@@ -13,7 +13,7 @@ export default function Home() {
             <link rel="icon" href="/assets/favicon.ico" />
         </Head>
         <motion.div variants={containerAnimation} initial="hidden" animate="visible" className="flex center column full-height homepage">
-            <motion.h1 variants={item}>Husband. Father. Software Developer.</motion.h1>
+            <motion.h1 variants={item}>Husband. Father. <span style={{color: "#00c1b6"}}>Software Developer</span>.</motion.h1>
             <motion.div variants={buttonContainer} className="transparent-btn-wrapper flex mobile-column">
                 <motion.div variants={item} className="transparent-btn"><Link href="/projects#about">About</Link></motion.div>
                 <motion.div variants={item} className="transparent-btn"><Link href="/projects">Projects</Link></motion.div>
