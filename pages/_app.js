@@ -20,17 +20,23 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <Script
-        id="ga-script-0"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=G-2HY26RMDSC`}
       />
-      <Script id="ga-script-1" strategy="lazyOnload">
-        {`window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'G-2HY26RMDSC');`}
-      </Script>
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2HY26RMDSC', {
+            page_path: window.location.pathname,
+          });
+        `,
+        }}
+      />
       <Head>
         <title>I&apos;m André! It&apos;s Nice To Meet You!</title>
         <meta
