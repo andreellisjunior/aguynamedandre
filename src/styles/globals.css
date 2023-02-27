@@ -8,13 +8,18 @@
   --foreground: black;
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   --background: radial-gradient(
     68.7% 87.98% at 33.75% 89%,
     #104070 0%,
     #29333d 100%
   );
   --foreground: white;
+}
+*,
+html,
+body {
+  box-sizing: border-box;
 }
 
 html {
@@ -24,4 +29,24 @@ html {
 
 .MuiBreadcrumbs-root li {
   color: var(--foreground);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: block;
+  width: auto;
+  padding: 7px 10px;
+  background: #00c1b6;
+  border-radius: 5px;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 2px 2px 5px rgb(31, 40, 48);
+}
+
+.button:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 4px 20px rgb(31, 40, 48);
 }

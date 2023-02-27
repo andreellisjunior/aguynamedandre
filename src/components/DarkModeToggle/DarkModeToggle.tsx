@@ -27,12 +27,12 @@ const DarkModeToggle = () => {
   }
 
   return (
-    <span className="mx-4">
+    <span className="mx-4 inline-flex item-center">
       <button onClick={checkTheme}>
         {theme === "dark" ? (
-          <Image src={Sun} alt="sun" />
+          <Image src={Sun} alt="sun" className="w-6 h-auto" />
         ) : (
-          <Image src={Moon} alt="moon" />
+          <Image src={Moon} alt="moon" className="w-6 h-auto" />
         )}
       </button>
     </span>
