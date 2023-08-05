@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import JSImage from '../../../public/javascript.svg';
+import JSImage from '../../../public/technologies/javascript.svg';
 import Tech from '../Technologies/Tech';
 
 const Experience = () => {
@@ -14,7 +14,7 @@ const Experience = () => {
           </h3>
         </div>
       </div>
-      <div className="border-[0.5px] border-gray-400 h-full rounded-2xl px-4 py-4 bg-white bg-opacity-5 drop-shadow-2xl">
+      <div className="border-[0.5px] border-gray-400 h-full rounded-2xl px-4 py-4 bg-white bg-opacity-5 drop-shadow-2xl overflow-hidden">
         <h2 className="font-semibold mb-4">TECHNOLOGIES</h2>
         <Tech />
       </div>

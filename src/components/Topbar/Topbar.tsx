@@ -8,7 +8,7 @@ const Topbar = () => {
       <div className="breadcrumb">
         <span className="text-xs tracking-widest flex dark:text-white items-center justify-center gap-2 font-nunito">
           {/* HOME / <span className="font-bold">DASHBOARD</span> */}
-          <span className=""> HOME / </span>
+          <span className="relative top-[1.5px]"> HOME / </span>
           <NextBreadcrumbs />
         </span>
       </div>

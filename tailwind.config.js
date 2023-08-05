@@ -1,12 +1,12 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
+const { fontFamily } = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class",
+  darkMode: 'class',
   content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './src/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     // colors: {
@@ -14,8 +14,17 @@ module.exports = {
     // },
     extend: {
       fontFamily: {
-        monts: ["var(--font-montserrat)", ...fontFamily.sans],
-        nunito: ["var(--font-nunito)", ...fontFamily.sans],
+        monts: ['var(--font-montserrat)', ...fontFamily.sans],
+        nunito: ['var(--font-nunito)', ...fontFamily.sans],
+      },
+      animation: {
+        marquee: 'marquee 10s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
     },
   },
