@@ -5,7 +5,7 @@ import Tech from '../Technologies/Tech';
 
 const Experience = () => {
   return (
-    <div className="experience-grid h-full row-span-2 grid grid-cols-2 grid-rows-2 gap-12">
+    <div className="experience-grid h-full row-span-2 grid grid-cols-2 grid-rows-2 gap-4">
       <div className="border-[0.5px] border-gray-400 h-full rounded-2xl px-4 py-4 bg-white bg-opacity-5 drop-shadow-2xl">
         <h2 className="font-semibold mb-4">YEARS EXP.</h2>
         <div className="flex justify-center items-center h-[75%]">
@@ -22,11 +22,9 @@ const Experience = () => {
         <h2 className="font-semibold mb-4">CURRENT POS.</h2>
         <div className="flex justify-center items-center h-[75%] flex-col">
           <h3 className="text-center text-4xl font-monts font-bold">
-            Lead Dev.
+            Software Dev.
           </h3>
-          <p className="text-sm text-center font-monts">
-            @Mavidea Technology Group
-          </p>
+          <p className="text-sm text-center font-monts">@Precision Planting</p>
         </div>
       </div>
       <div className="border-[0.5px] border-gray-400 h-full rounded-2xl px-4 py-4 bg-white bg-opacity-5 drop-shadow-2xl">

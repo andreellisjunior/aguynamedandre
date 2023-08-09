@@ -8,7 +8,6 @@ const Project = ({ title }: any, { url }: any) => {
       <Link href="/projects">
         <div className="project rounded-3xl flex justify-center items-center overflow-hidden h-40 mx-1">
           <h2 className="absolute text-2xl z-10">{title}</h2>
-          {console.log(title)}
           <Image
             src={url}
             alt="kjs nail hause"

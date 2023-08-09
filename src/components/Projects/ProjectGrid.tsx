@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import KJs from '../../../public/kjsnailhause.png';
-import projects from '../../data/index';
+import projects from '../../data';
 import Project from './Project';
 
 const ProjectGrid = () => {

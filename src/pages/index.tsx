@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="font-monts grid gap-12 grid-cols-2 grid-rows-3 h-full justify-between">
+      <main className="font-monts grid gap-4 grid-cols-2 grid-rows-3 h-full justify-between">
         <div className="about-section border-[0.5px] border-gray-400 h-full rounded-2xl px-4 py-4 bg-white bg-opacity-5 drop-shadow-md overflow-hidden">
           <div className="title">
             <h2 className="font-semibold mb-4">

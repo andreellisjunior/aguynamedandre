@@ -16,6 +16,14 @@
   );
   --foreground: white;
 }
+[data-theme='light'] {
+  --background: radial-gradient(
+    68.7% 87.98% at 33.75% 89%,
+    #5f9cd8 0%,
+    #ffffff 100%
+  );
+  --foreground: #333333;
+}
 *,
 html,
 body {
