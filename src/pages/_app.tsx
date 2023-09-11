@@ -16,12 +16,12 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <ThemeProvider>
         <div
-          className={`flex h-screen w-full py-10 items-center justify-between relative  ${nunito.variable} ${montserrat.variable}`}
+          className={`flex h-screen w-full min-h-[800px] py-10 justify-between relative  ${nunito.variable} ${montserrat.variable}`}
         >
-          <section className="w-64 max-w-52 h-full px-10 border-r-[0.5px] relative">
+          <section className="w-64 max-w-52 px-10 relative">
             <Nav />
           </section>
-          <section className="w-full h-full mr-auto px-10 relative flex flex-col">
+          <section className="w-full h-full mr-auto px-10 border-l-[0.5px] min-h-[700px] relative flex flex-col">
             <Topbar />
             <Component className="dark:bg-dark h-full" {...pageProps} />
           </section>
