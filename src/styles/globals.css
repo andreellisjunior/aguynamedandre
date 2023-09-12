@@ -8,7 +8,7 @@
   --foreground: black;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --background: radial-gradient(
     68.7% 87.98% at 33.75% 89%,
     #104070 0%,
@@ -16,7 +16,7 @@
   );
   --foreground: white;
 }
-[data-theme='light'] {
+[data-theme="light"] {
   --background: radial-gradient(
     68.7% 87.98% at 33.75% 89%,
     #5f9cd8 0%,
@@ -33,6 +33,10 @@ body {
 html {
   background: var(--background);
   color: var(--foreground);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .MuiBreadcrumbs-root li {
@@ -49,12 +53,11 @@ p {
   padding: 7px 10px;
   background: #00c1b6;
   border-radius: 5px;
-  text-transform: capitalize;
   transition: all 0.2s ease-in-out;
-  box-shadow: 2px 2px 5px rgb(31, 40, 48);
+  box-shadow: 2px 2px 5px rgba(31, 40, 48, 0.25);
 }
 
 .button:hover {
   transform: translateY(-4px);
-  box-shadow: 4px 4px 20px rgb(31, 40, 48);
+  box-shadow: 4px 4px 20px rgba(31, 40, 48, 0.5);
 }

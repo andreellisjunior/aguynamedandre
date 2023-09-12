@@ -1,11 +1,12 @@
-import Experience from '@/components/Experience/Experience';
-import Projects from '@/components/Projects/Projects';
-import { useTheme } from 'next-themes';
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import Arrow from '../../public/Arrow.svg';
+import Experience from "@/components/Experience/Experience";
+import Projects from "@/components/Projects/Projects";
+import { useTheme } from "next-themes";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import Arrow from "../../public/Arrow.svg";
+import Button from "@/components/Button/Button";
 
 export default function Home() {
   return (
@@ -16,11 +17,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="font-monts grid gap-4 grid-cols-2 grid-rows-3 h-full justify-between">
-        <div className="about-section border-[0.5px] border-gray-400 rounded-2xl px-4 py-4 bg-white bg-opacity-5 drop-shadow-md overflow-hidden">
+      <main className="font-monts lg:grid gap-4 lg:grid-cols-2 lg:grid-rows-3 h-auto min-h-[85vh] justify-between flex flex-col mb-20 lg:mb-0">
+        <div className="about-section border-[0.5px] border-gray-400 rounded-2xl px-4 py-4 bg-white bg-opacity-5 drop-shadow-md  h-full">
           <div className="title">
             <h2 className="font-semibold mb-4">
-              <Link href={'/about'} className="flex gap-3">
+              <Link href={"/about"} className="flex gap-3">
                 ABOUT <Image src={Arrow} alt="arrow" />
               </Link>
             </h2>
@@ -29,16 +30,14 @@ export default function Home() {
             I’m a seasoned full stack developer with 6 years of experience
             designing and developing websites and software applications...
           </p>
-          <Link href={'/about'} className="button text-center">
-            Learn More
-          </Link>
+          <Button href="/about" linkText="Learn More" />
         </div>
         <Experience />
         <Projects />
         <div className="contact-section  border-[0.5px] border-gray-400 h-full rounded-2xl px-4 py-4 bg-white bg-opacity-5 drop-shadow-2xl">
           <div className="title">
             <h2 className="font-semibold mb-4">
-              <Link href={'/contact'} className="flex gap-3">
+              <Link href={"/contact"} className="flex gap-3">
                 CONTACT <Image src={Arrow} alt="arrow" />
               </Link>
             </h2>
@@ -47,9 +46,7 @@ export default function Home() {
             Have a comment, question, request? Reach out! I’d love you here from
             you!
           </p>
-          <Link href={'/contact'} className="button block text-center w-full">
-            GET IN TOUCH!
-          </Link>
+          <Button href="/contact" linkText="Get In Touch" />
         </div>
       </main>
     </>

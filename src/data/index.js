@@ -1,19 +1,19 @@
 const projects = [
   {
+    title: "Break It Down",
+    url: "/break-it-down.png",
+  },
+  {
+    title: "NoteWorthy",
+    url: "/noteworthy.png",
+  },
+  {
     title: "KJ's Nail Hause",
-    url: '../../public/kjsnailhause.png',
+    url: "/kjsnailhause.png",
   },
   {
-    title: 'Business 2',
-    url: '../../public/kjsnailhause.png',
-  },
-  {
-    title: 'Business 3',
-    url: '../../public/kjsnailhause.png',
-  },
-  {
-    title: 'Business 4',
-    url: '../../public/kjsnailhause.png',
+    title: "Kinship",
+    url: "/kinship.png",
   },
 ];
 

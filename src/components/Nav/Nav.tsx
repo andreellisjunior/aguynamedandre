@@ -9,54 +9,67 @@ import Contact from "../../../public/PaperPlaneTilt.svg";
 
 const Nav = () => {
   return (
-    <nav className="h-full flex flex-col justify-evenly">
-      <div className="logo">
+    <nav className="h-full flex lg:flex-col flex-row justify-between sm:justify-evenly relative">
+      <div className="logo  hidden lg:block">
         <Image
           className="w-48 h-auto"
           src={Logo}
           alt="A Guy Named Andre Logo"
         />
       </div>
-      <div className="nav-link-wrapper font-nunito">
-        <ul>
-          <li className="py-10 text-base">
-            <Link href={"/"} className="flex items-center gap-2">
+      <div className="nav-link-wrapper w-full sm:w-auto font-nunito">
+        <ul className="flex lg:flex-col flex-row items-center lg:items-start justify-between">
+          <li className="py-5 lg:py-10 text-base px-2 sm:px-8 lg:px-0">
+            <Link
+              href={"/"}
+              className="flex items-center gap-2 lg:flex-row flex-col"
+            >
               <Image
-                className="h-auto inline"
+                className="h-auto w-9 sm:w-auto inline"
                 src={Home}
                 alt="Dashboard Icon"
               />
-              <span>DASHBOARD</span>
+              <span className="hidden sm:block">DASHBOARD</span>
             </Link>
           </li>
-          <li className="py-10 text-base">
-            <Link href={"/about"} className="flex items-center gap-2">
+          <li className="py-5 lg:py-10 text-base px-2 sm:px-8 lg:px-0">
+            <Link
+              href={"/about"}
+              className="flex items-center gap-2  lg:flex-row flex-col"
+            >
               <Image
-                className="h-auto inline"
+                className="h-auto w-9 sm:w-auto inline"
                 src={About}
                 alt="Dashboard Icon"
+                height={24}
               />
-              <span>ABOUT</span>
+              <span className="hidden sm:block">ABOUT</span>
             </Link>
           </li>
-          <li className="py-10 text-base">
-            <Link href={"/projects"} className="flex items-center gap-2">
+          <li className="py-5 lg:py-10 text-base px-2 sm:px-8 lg:px-0">
+            <Link
+              href={"/projects"}
+              className="flex items-center gap-2  lg:flex-row flex-col"
+            >
               <Image
-                className="h-auto inline"
+                className="h-auto w-9 sm:w-auto inline"
                 src={Projects}
                 alt="Dashboard Icon"
               />
-              <span>PROJECTS</span>
+              <span className="hidden sm:block">PROJECTS</span>
             </Link>
           </li>
-          <li className="py-10 text-base">
-            <Link href={"/contact"} className="flex items-center gap-2">
+          <li className="py-5 lg:py-10 text-base px-2 sm:px-8 lg:px-0">
+            <Link
+              href={"/contact"}
+              className="flex items-center gap-2  lg:flex-row flex-col"
+            >
               <Image
-                className="h-auto inline"
+                className="h-auto w-9 sm:w-auto inline"
                 src={Contact}
                 alt="Dashboard Icon"
               />
-              <span>CONTACT</span>
+              <span className="hidden sm:block">CONTACT</span>
             </Link>
           </li>
         </ul>

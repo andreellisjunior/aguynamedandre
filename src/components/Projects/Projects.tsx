@@ -13,9 +13,9 @@ const Projects = () => {
           <Link href={'/projects'} className="flex gap-3">
             PROJECTS <Image src={Arrow} alt="arrow" />
           </Link>
-          <ProjectGrid />
         </h2>
       </div>
+          <ProjectGrid />
     </div>
   );
 };
