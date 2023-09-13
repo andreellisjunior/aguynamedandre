@@ -24,8 +24,9 @@ const about = () => {
             designing and developing websites and software applications.
             Proficient in web development, UX design principles, modular
             systems, and process improvement for rapid growth and team
-            management. Skilled in building application's user experience to
-            deliver information effectively and aesthetically to site visitors.
+            management. Skilled in building application&apos;s user experience
+            to deliver information effectively and aesthetically to site
+            visitors.
           </p>
           <p>Check out some good people while here:</p>
           <ButtonGroup

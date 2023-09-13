@@ -56,7 +56,7 @@ const LandingModule = () => {
         transition={{ ease: "easeOut", duration: 1, delay: 0.7 }}
         className="text-3xl md:text-5xl font-monts"
       >
-        I'M A GUY NAMED ANDRE
+        I&apos;M A GUY NAMED ANDRE
       </motion.h3>
     </motion.div>
   );
