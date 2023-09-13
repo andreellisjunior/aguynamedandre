@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
           }}
           className={`flex h-auto w-full min-h-screen py-10 justify-between relative flex-col lg:flex-row  ${nunito.variable} ${montserrat.variable}`}
         >
-          <section className="lg:w-64 max-w-52 px-5 md:px-10 lg:relative bg-slate-600 backdrop-brightness-75 backdrop-blur-3xl lg:backdrop-filter-none z-10 bottom-0 w-full fixed">
+          <section className="lg:w-64 max-w-52 px-5 md:px-10 lg:relative border-t-[0.5px] border-opacity-50 border-white lg:border-none bg-[#2c4054] lg:bg-transparent bg-opacity-60 backdrop-blur-2xl lg:backdrop-filter-none z-10 bottom-0 w-full fixed">
             <Nav />
           </section>
           <section className="w-full h-full mr-auto px-5 md:px-10 border-l-0 lg:border-l-[0.5px] min-h-[700px] relative flex flex-col">
