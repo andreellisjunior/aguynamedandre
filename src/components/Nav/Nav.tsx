@@ -10,7 +10,7 @@ import Contact from "../../../public/PaperPlaneTilt.svg";
 const Nav = () => {
   return (
     <nav className="h-full flex lg:flex-col flex-row justify-between sm:justify-evenly relative">
-      <div className="logo  hidden lg:block">
+      <div className="logo hidden lg:block">
         <Image
           className="w-48 h-auto"
           src={Logo}

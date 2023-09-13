@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 function Crumb({ text, href, last = false }: any) {
   if (last) {
     return (
-      <span className="dark:text-white font-bold uppercase text-xs tracking-widest">
+      <span className="dark:text-white font-bold uppercase text-[0.5rem] sm:text-xs tracking-widest">
         {text}
       </span>
     );
@@ -13,7 +13,7 @@ function Crumb({ text, href, last = false }: any) {
 
   return (
     <Link
-      className="dark:text-white uppercase text-xs tracking-widest"
+      className="dark:text-white uppercase text-[0.5rem] sm:text-xs tracking-widest"
       href={href}
     >
       {text}

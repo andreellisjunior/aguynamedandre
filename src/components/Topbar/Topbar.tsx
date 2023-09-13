@@ -1,14 +1,14 @@
-import Link from 'next/link';
-import NextBreadcrumbs from '../Breadcrumbs/NextBreadcrumbs';
-import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
+import Link from "next/link";
+import NextBreadcrumbs from "../Breadcrumbs/NextBreadcrumbs";
+import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 
 const Topbar = () => {
   return (
-    <div className="flex justify-between items-center pb-8">
+    <div className="flex justify-between items-end sm:items-center pb-8 flex-col sm:flex-row gap-3 sm:gap-0">
       <div className="breadcrumb">
-        <span className="text-xs tracking-widest flex dark:text-white items-center justify-center gap-2 font-nunito">
+        <span className="text-[0.5rem] sm:text-xs tracking-widest flex dark:text-white items-center justify-center gap-2 font-nunito">
           {/* HOME / <span className="font-bold">DASHBOARD</span> */}
-          <span className="relative top-[1.5px]"> HOME / </span>
+          <span className="relative"> HOME / </span>
           <NextBreadcrumbs />
         </span>
       </div>
