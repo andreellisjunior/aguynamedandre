@@ -17,17 +17,17 @@ const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <LandingModule />
+      {/* <LandingModule /> */}
       <ThemeProvider>
         <m.div
-          variants={fadeIn}
-          animate="show"
-          initial="hidden"
-          transition={{
-            ease: "easeInOut",
-            duration: 3,
-            delay: 3,
-          }}
+          // variants={fadeIn}
+          // animate="show"
+          // initial="hidden"
+          // transition={{
+          //   ease: "easeInOut",
+          //   duration: 3,
+          //   delay: 3,
+          // }}
           className={`flex h-auto w-full min-h-screen py-10 justify-between relative flex-col lg:flex-row  ${nunito.variable} ${montserrat.variable}`}
         >
           <section className="lg:w-64 max-w-52 px-5 md:px-10 lg:relative border-t-[0.5px] border-opacity-50 border-white lg:border-none bg-[#2c4054] lg:bg-transparent bg-opacity-60 backdrop-blur-2xl lg:backdrop-filter-none z-10 bottom-0 w-full fixed">

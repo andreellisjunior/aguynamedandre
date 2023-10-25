@@ -1,18 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import kj from "../../../public/kjsnailhause.png";
 
-const Project = ({ title, link }: { title: string; link: string }) => {
-  console.log(title, link);
+const Project = ({ id, title, link }: { id: string, title: string; link: string }) => {
   return (
     <>
-      <Link href="/projects">
+      <Link href={`/projects/${id}`}>
         <div
           className="project rounded-xl flex justify-center items-center relative h-40 m-4
          hover:drop-shadow-2xl hover:-translate-y-1 transition ease-in-out duration-200"
         >
-          <h2 className="absolute text-center text-xl z-10 font-bold">
+          <h2 className="absolute text-center text-xl z-10 font-bold text-white">
             {title}
           </h2>
           <Image

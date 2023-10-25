@@ -1,12 +1,11 @@
-import Link from "next/link"
+import Link from "next/link";
 
-
-const Button = ({href, linkText}: {href: string, linkText: string}) => {
+const Button = ({ href, linkText }: { href: string; linkText: string }) => {
   return (
     <Link href={href} className="button text-center uppercase">
-            {linkText}
-          </Link>
-  )
-}
+      {linkText}
+    </Link>
+  );
+};
 
-export default Button
+export default Button;

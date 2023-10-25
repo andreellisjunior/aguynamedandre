@@ -61,7 +61,7 @@ const Nav = () => {
           </li>
           <li className="py-5 lg:py-10 text-base px-2 sm:px-8 lg:px-0">
             <Link
-              href={"/contact"}
+              href={"mailto:andreellisjunior@gmail.com"}
               className="flex items-center gap-2  lg:flex-row flex-col"
             >
               <Image

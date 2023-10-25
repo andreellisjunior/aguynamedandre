@@ -49,8 +49,8 @@ p {
 
 .button {
   display: block;
-  width: auto;
   padding: 7px 10px;
+  width: fit-content;
   background: #00c1b6;
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
