@@ -15,6 +15,7 @@ const projects = () => {
         <h1>PROJECTS</h1>
         <p id="about">My name is André! I’m a software developer who’s passionate about design, development, and delivering expectations. Below you’ll see a list of the things I’ve worked on over the years. If you have any questions or need anything, don’t hestiate to reach out!</p>
         <div className="transparent-btn-wrapper flex mobile-column">
+          <div className="transparent-btn"><Link href="#skills">Skills</Link></div>
           <div className="transparent-btn"><Link href="#frameworks">Frameworks</Link></div>
           <div className="transparent-btn"><Link href="#wordpress">WordPress</Link></div>
           <div className="transparent-btn"><Link href="#shopify">Shopify</Link></div>
