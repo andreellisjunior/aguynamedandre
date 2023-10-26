@@ -50,6 +50,9 @@ function MyApp({ Component, pageProps, router }) {
           href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Spartan:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
       </Head>
       <Header />
       <motion.div

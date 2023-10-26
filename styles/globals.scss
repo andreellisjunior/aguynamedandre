@@ -478,3 +478,24 @@ nav {
     }
   }
 }
+
+.skills-section {
+  display: flex;
+  color: white;
+
+  .flex {
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  .skill-card {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  i {
+    font-size: 3rem;
+  }
+}
