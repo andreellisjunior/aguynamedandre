@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Montserrat, Nunito } from "@next/font/google";
+import { Montserrat, Nunito } from "next/font/google";
 
 import { motion } from "framer-motion";
 import { animation, fadeUp } from "../../animations";
