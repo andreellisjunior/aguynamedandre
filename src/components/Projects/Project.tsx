@@ -1,11 +1,21 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
-const Project = ({ id, title, link }: { id: string, title: string; link: string }) => {
+const Project = ({
+  id,
+  title,
+  link,
+  slug,
+}: {
+  id: string;
+  title: string;
+  link: string;
+  slug: string;
+}) => {
   return (
     <>
-      <Link href={`/projects/${id}`}>
+      <Link href={`/projects/${slug}`}>
         <div
           className="project rounded-xl flex justify-center items-center relative h-40 m-4
          hover:drop-shadow-2xl hover:-translate-y-1 transition ease-in-out duration-200"

@@ -1,6 +1,6 @@
-import Link from "next/link";
-import NextBreadcrumbs from "../Breadcrumbs/NextBreadcrumbs";
-import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
+import Link from 'next/link';
+import NextBreadcrumbs from '../Breadcrumbs/NextBreadcrumbs';
+import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
 
 const Topbar = () => {
   return (
@@ -13,14 +13,14 @@ const Topbar = () => {
         </span>
       </div>
       <div className="utilities flex items-center">
-        <DarkModeToggle />
+        {/* <DarkModeToggle />
         <span>
           <input
             type="text"
             placeholder="Search Project"
             className="px-2 py-2 border-[0.5px] rounded-lg text-xs bg-[#01B3FF] bg-opacity-10 w-48 italic"
           />
-        </span>
+        </span> */}
       </div>
     </div>
   );

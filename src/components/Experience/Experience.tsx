@@ -1,7 +1,7 @@
-import Image from "next/image";
-import React from "react";
-import JSImage from "../../../public/technologies/javascript.svg";
-import Tech from "../Technologies/Tech";
+import Image from 'next/image';
+import React from 'react';
+import JSImage from '../../../public/technologies/javascript.svg';
+import Tech from '../Technologies/Tech';
 
 const Experience = () => {
   return (
@@ -22,7 +22,7 @@ const Experience = () => {
         <h2 className="font-semibold mb-4">CURRENT POS.</h2>
         <div className="flex justify-center items-center h-[75%] flex-col">
           <h3 className="text-center text-3xl font-monts font-bold">
-            Software Dev.
+            Software Engineer.
           </h3>
           <p className="text-sm text-center font-monts">@Precision Planting</p>
         </div>
