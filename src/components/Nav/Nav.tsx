@@ -6,12 +6,12 @@ import DarkLogo from '../../../public/dark-logo.svg';
 import { useTheme } from 'next-themes';
 
 const Nav = () => {
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
   const [logo, setLogo] = useState(Logo);
 
   useEffect(() => {
-    theme == 'dark' ? setLogo(Logo) : setLogo(DarkLogo);
-  }, [theme]);
+    resolvedTheme == 'dark' ? setLogo(Logo) : setLogo(DarkLogo);
+  }, [resolvedTheme]);
 
   return (
     <nav className='h-full flex lg:flex-col flex-row justify-between sm:justify-start relative'>

@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 
 const FileHead = ({ title }: { title: string }) => {
+  console.log(title);
   return (
     <Head>
       <title>{title} | A Guy Named André</title>

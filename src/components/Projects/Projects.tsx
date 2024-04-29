@@ -8,7 +8,6 @@ import FileHead from '../FileHead/FileHead';
 const Projects = () => {
   return (
     <>
-      <FileHead title='Projects' />
       <div className='projects-grid  border-[0.5px] border-gray-400 h-full rounded-2xl px-4 py-4 bg-white bg-opacity-5 drop-shadow-2xl row-span-2'>
         <div className='title'>
           <h2 className='font-semibold mb-4'>
