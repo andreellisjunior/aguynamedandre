@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ["media.graphassets.com"],
+    dangerouslyAllowSVG: true
     // remotePatterns: [
     //   {
     //     protocol: "https",
