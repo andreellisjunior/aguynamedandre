@@ -1,13 +1,13 @@
+import { Component } from 'react';
 import { fadeIn } from '@/animations';
 import LandingModule from '@/components/LandingModule/LandingModule';
 import Nav from '@/components/Nav/Nav';
 import Topbar from '@/components/Topbar/Topbar';
 import '@/styles/globals.css';
-import { motion } from 'framer-motion';
+import { motion as m } from 'framer-motion';
 import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
 import { Montserrat, Nunito } from 'next/font/google';
-import React from 'react';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -16,13 +16,11 @@ const montserrat = Montserrat({
 const nunito = Nunito({ subsets: ['latin'], variable: '--font-nunito' });
 
 export default function App({ Component, pageProps }: AppProps) {
-  const DynamicComponent = Component as React.ComponentType<any>;
-
   return (
     <>
       <LandingModule />
       <ThemeProvider>
-        <motion.div
+        <m.div
           variants={fadeIn}
           animate='show'
           initial='hidden'
@@ -38,9 +36,9 @@ export default function App({ Component, pageProps }: AppProps) {
           </section>
           <section className='w-full h-full mr-auto px-5 md:px-10 border-l-0 lg:border-l-[0.5px] min-h-[700px] relative flex flex-col'>
             <Topbar />
-            <DynamicComponent className='dark:bg-dark h-full' {...pageProps} />
+            <Component className='dark:bg-dark h-full' {...pageProps} />
           </section>
-        </motion.div>
+        </m.div>
       </ThemeProvider>
     </>
   );
