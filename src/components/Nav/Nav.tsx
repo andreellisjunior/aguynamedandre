@@ -16,6 +16,7 @@ const Nav = () => {
   return (
     <nav className='h-full flex lg:flex-col flex-row justify-between sm:justify-start relative'>
       <div className='logo hidden lg:block'>
+        <Link href="/">
         <Image
           className='w-48 h-auto'
           width={192}
@@ -23,6 +24,7 @@ const Nav = () => {
           src={logo}
           alt='A Guy Named Andre Logo'
         />
+        </Link>
       </div>
       <div className='nav-link-wrapper w-full sm:w-auto font-nunito'>
         <ul className='flex lg:flex-col flex-row items-center lg:items-start justify-between'>

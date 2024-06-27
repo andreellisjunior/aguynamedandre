@@ -30,7 +30,7 @@ const ProjectGrid = () => {
             },
             body: JSON.stringify({
               query: ` {
-                projects {
+                projects(first: 100) {
                   id
                   projectName
                   slug
@@ -65,7 +65,7 @@ const ProjectGrid = () => {
         router.pathname == '/projects' ? `` : `max-h-96 overflow-y-scroll`
       }`}
     >
-      <div className="project-wrapper sm:grid grid-rows-2 grid-cols-2">
+      <div className='project-wrapper sm:grid grid-rows-2 grid-cols-2'>
         {/* {projects.map(({ title, url }) => (
           <Project title={title} link={url} key={title} />
         ))} */}

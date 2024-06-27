@@ -31,7 +31,7 @@ const SingleProject = () => {
             },
             body: JSON.stringify({
               query: ` {
-              projects {
+              projects(first: 100) {
                 id
                 projectName
                 slug
