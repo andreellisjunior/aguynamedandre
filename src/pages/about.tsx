@@ -9,6 +9,7 @@ import Arrow from '../../public/Arrow.svg';
 import headShot from '../../public/andre-ellis-jr.png';
 import ButtonGroup from '@/components/Button/ButtonGroup';
 import FileHead from '@/components/FileHead/FileHead';
+import Contact from '@/components/Contact/Contact';
 
 const about = () => {
   return (
@@ -28,12 +29,17 @@ const about = () => {
             to deliver information effectively and aesthetically to site
             visitors.
           </p>
+          <br />
           <p>Check out some good people while here:</p>
           <ButtonGroup
             links={[
               { href: `https://whaies.dev/`, title: `whaies.dev` },
               { href: `https://andyficek.netlify.app`, title: `andyficek.dev` },
               { href: `https://www.bensievert.dev/`, title: `bensievert.dev` },
+              {
+                href: `https://www.andrewgilliland.dev/`,
+                title: `andrewgilliland.dev`,
+              },
             ]}
           ></ButtonGroup>
         </div>
@@ -47,26 +53,7 @@ const about = () => {
           ></Image>
         </div>
         <Experience />
-        <div className='contact-section  border-[0.5px] border-gray-400 h-full rounded-2xl px-4 py-4 bg-white bg-opacity-5 drop-shadow-2xl'>
-          <div className='title'>
-            <h2 className='font-semibold mb-4'>
-              <Link
-                href={'mailto:andreellisjunior@gmail.com'}
-                className='flex gap-3'
-              >
-                CONTACT <Image src={Arrow} alt='arrow' />
-              </Link>
-            </h2>
-          </div>
-          <p>
-            Have a comment, question, request? Reach out! I’d love you here from
-            you!
-          </p>
-          <Button
-            href='mailto:andreellisjunior@gmail.com'
-            linkText='Get In Touch'
-          />
-        </div>
+        <Contact />
       </main>
     </>
   );
