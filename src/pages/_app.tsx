@@ -5,7 +5,7 @@ import Topbar from '@/components/Topbar/Topbar';
 import '@/styles/globals.css';
 import { motion as m } from 'framer-motion';
 import { ThemeProvider } from 'next-themes';
-import { AppProps } from 'next/app';
+import type { AppProps } from 'next/app';
 import { Montserrat, Nunito } from 'next/font/google';
 
 const montserrat = Montserrat({
@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
           </section>
           <section className='w-full h-full mr-auto px-5 md:px-10 border-l-0 lg:border-l-[0.5px] min-h-[700px] relative flex flex-col'>
             <Topbar />
-            <Component {...pageProps} className='dark:bg-dark h-full' />
+            <Component className='dark:bg-dark h-full' {...pageProps} />
           </section>
         </m.div>
       </ThemeProvider>
