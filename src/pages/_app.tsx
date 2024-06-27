@@ -7,6 +7,7 @@ import { motion as m } from 'framer-motion';
 import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
 import { Montserrat, Nunito } from 'next/font/google';
+import React from 'react';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -35,7 +36,9 @@ export default function App({ Component, pageProps }: AppProps) {
           </section>
           <section className='w-full h-full mr-auto px-5 md:px-10 border-l-0 lg:border-l-[0.5px] min-h-[700px] relative flex flex-col'>
             <Topbar />
-            <Component className='dark:bg-dark h-full' {...pageProps} />
+            <React.Fragment>
+              <Component className='dark:bg-dark h-full' {...pageProps} />
+            </React.Fragment>
           </section>
         </m.div>
       </ThemeProvider>
