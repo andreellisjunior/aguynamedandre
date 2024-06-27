@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme="dark"] {
+  --background: radial-gradient(
+    68.7% 87.98% at 33.75% 89%,
+    #104070 0%,
+    #29333d 100%
+  );
+  --foreground: white;
+}
+[data-theme="light"] {
+  --background: radial-gradient(
+    68.7% 87.98% at 33.75% 89%,
+    #5f9cd8 0%,
+    #ffffff 100%
+  );
+  --foreground: #333333;
+}
+*,
+html,
+body {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  color: var(--foreground);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.MuiBreadcrumbs-root li {
+  color: var(--foreground);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: block;
+  padding: 7px 10px;
+  width: fit-content;
+  background: #00c1b6;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(31, 40, 48, 0.25);
+}
+
+.btn-group {
+  width: fit-content !important;
+}
+
+.button:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 4px 20px rgba(31, 40, 48, 0.5);
+}
+
+.css-63vwl1-MuiTypography-root-MuiBreadcrumbs-root {
+  font-size: 0.5rem;
+}

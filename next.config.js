@@ -1,4 +1,17 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
-  target: "serverless"
-}
+  images: {
+    domains: ["media.graphassets.com"],
+    dangerouslyAllowSVG: true
+    // remotePatterns: [
+    //   {
+    //     protocol: "https",
+    //     hostname: "media.graphassets.com",
+    //     port: "",
+    //   },
+    // ],
+  },
+};
+
+module.exports = nextConfig;
