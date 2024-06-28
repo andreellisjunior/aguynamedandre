@@ -30,7 +30,7 @@ const Contact = () => {
           </Link>
         </h2>
       </div>
-      <p>Have a comment or question? Reach out! I’d love you here from you!</p>
+      <p>Have a comment or question? Reach out! I’d love to here from you!</p>
       <Button
         href='mailto:andreellisjunior@gmail.com'
         linkText='Get In Touch'
