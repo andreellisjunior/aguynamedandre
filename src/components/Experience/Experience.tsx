@@ -10,7 +10,8 @@ const Experience = () => {
         <h2 className='font-semibold mb-4'>YEARS EXP.</h2>
         <div className='flex justify-center items-center h-[75%]'>
           <h3 className='text-8xl font-monts font-bold'>
-            8<sub className='text-2xl font-normal'>/yrs.</sub>
+            {new Date().getFullYear() - 2016}
+            <sub className='text-2xl font-normal'>/yrs.</sub>
           </h3>
         </div>
       </div>
