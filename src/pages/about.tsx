@@ -40,6 +40,10 @@ const about = () => {
                 href: `https://www.andrewgilliland.dev/`,
                 title: `andrewgilliland.dev`,
               },
+              {
+                href: `https://jorgecolon.design/`,
+                title: `jorgecolon.design`,
+              },
             ]}
           ></ButtonGroup>
         </div>
