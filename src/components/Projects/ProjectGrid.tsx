@@ -15,6 +15,7 @@ const ProjectGrid = () => {
       url: string;
       slug: string;
       screenshot: { id: string; url: string };
+      order: number;
     }[]
   >([]);
   useEffect(() => {
@@ -30,7 +31,7 @@ const ProjectGrid = () => {
             },
             body: JSON.stringify({
               query: ` {
-                projects(first: 100) {
+                projects(first: 100, orderBy: order_ASC) {
                   id
                   projectName
                   slug
@@ -44,13 +45,14 @@ const ProjectGrid = () => {
                   technologies {
                     url
                   }
+                  order
                 }
               }`,
             }),
           }
         );
         const content = await response.json();
-
+        console.log(content);
         setData(content.data.projects);
       } catch (error) {
         console.log('error', error);
