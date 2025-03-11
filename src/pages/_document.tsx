@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-import OpenGraphImage from '../../public/opengraph-image.png';
 
 export default function Document() {
   return (
@@ -22,7 +21,7 @@ export default function Document() {
         property='og:description'
         content='I solve problems with modern technology'
       />
-      <meta property='og:image' content={OpenGraphImage.src} />
+      <meta property='og:image' content='./public/opengraph-image.png' />
 
       <meta name='twitter:card' content='summary_large_image' />
       <meta property='twitter:domain' content='aguynamedandre.com' />
@@ -31,7 +30,7 @@ export default function Document() {
         name='twitter:description'
         content='I solve problems with modern technology'
       />
-      <meta name='twitter:image' content={OpenGraphImage.src} />
+      <meta name='twitter:image' content='./public/opengraph-image.png' />
 
       <body>
         <Main />
