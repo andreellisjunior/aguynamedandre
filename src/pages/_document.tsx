@@ -9,7 +9,7 @@ export default function Document() {
         type='text/css'
         href='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css'
       />
-      <title>I'm André! Nice to finally meet!</title>
+      <title>I&apos;m André! Nice to finally meet!</title>
       <meta
         name='description'
         content='I solve problems with modern technology'
