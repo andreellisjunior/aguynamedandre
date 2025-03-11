@@ -52,7 +52,6 @@ const ProjectGrid = () => {
           }
         );
         const content = await response.json();
-        console.log(content);
         setData(content.data.projects);
       } catch (error) {
         console.log('error', error);
