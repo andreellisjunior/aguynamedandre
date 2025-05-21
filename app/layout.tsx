@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'aguynamedandre.com',
     images: [
       {
-        url: 'https://aguynamedandre.vercel.app/og.png',
+        url: 'https://aguynamedandre.com/og.png',
         width: 1920,
         height: 1080,
       },
