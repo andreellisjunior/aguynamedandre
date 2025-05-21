@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     default: 'A Guy Named André',
     template: '%s | A Guy Named André',
   },
-  description: 'Solving problems for businesses and individuals.',
+  description: 'Creating Solutions with Modern Technology.',
   openGraph: {
     title: 'A Guy Named André',
-    description: 'Solving problems for businesses and individuals.',
+    description: 'Creating Solutions with Modern Technology.',
     url: 'https://aguynamedandre.com',
     siteName: 'aguynamedandre.com',
     images: [
