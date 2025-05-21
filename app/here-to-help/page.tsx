@@ -73,7 +73,7 @@ export default async function ProjectsPage() {
         <div className='w-full h-px bg-zinc-800' />
 
         <div className='grid grid-cols-1 gap-8 mx-auto lg:grid-cols-1 text-white'>
-          <div className='grid grid-cols-2 gap-4'>
+          <div className='grid md:grid-cols-2 gap-4'>
             <Card>
               <Link href='#get-in-touch' className='block'>
                 <div className='relative w-full h-full p-4 md:p-8'>
