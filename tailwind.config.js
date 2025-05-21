@@ -41,6 +41,7 @@ module.exports = {
 				title: "title 3s ease-out forwards",
 				"fade-left": "fade-left 3s ease-in-out forwards",
 				"fade-right": "fade-right 3s ease-in-out forwards",
+				marquee: 'marquee 25s linear infinite',
 			},
 			keyframes: {
 				"fade-in": {
@@ -100,6 +101,10 @@ module.exports = {
 						"line-height": "100%",
 						opacity: "100%",
 					},
+				},
+				marquee: {
+					'0%': { transform: 'translateX(50%)' },
+					'100%': { transform: 'translateX(-50%)' },
 				},
 			},
 		},

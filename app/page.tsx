@@ -1,51 +1,61 @@
-import Link from "next/link";
-import React from "react";
-import Particles from "./components/particles";
+import Link from 'next/link';
+import React from 'react';
+import Particles from './components/particles';
+import {
+  ArrowRightIcon,
+  ArrowLongRightIcon,
+} from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
+  { name: 'About', href: '/about' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Contact', href: '/contact' },
+  { name: 'Need a Solution?', href: '/here-to-help', fancy: true },
 ];
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-      <nav className="my-16 animate-fade-in">
-        <ul className="flex items-center justify-center gap-4">
+    <div className='flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black'>
+      <nav className='my-16 animate-fade-in'>
+        <ul className='flex items-center justify-center gap-4'>
           {navigation.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+              className={`text-sm duration-500 text-zinc-500 hover:text-white ${
+                item.fancy
+                  ? `relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-full after:bg-[#01B3FF] after:transition-all after:duration-300 hover:after:h-full hover:after:bottom-0 hover:after:bg-[#01B3FF] after:-z-10 px-2 hover:px-2 hover:py-1 hover:rounded italic`
+                  : ``
+              }`}
             >
               {item.name}
             </Link>
           ))}
         </ul>
       </nav>
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+      <div className='hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0' />
       <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
+        className='absolute inset-0 -z-10 animate-fade-in'
         quantity={100}
       />
-      <h1 className="py-3.5 px-0.5 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
-        chronark
+      <h1 className='py-3.5 px-0.5 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text uppercase'>
+        a guy named andré
       </h1>
 
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500 ">
-          I'm building{" "}
-          <Link
-            target="_blank"
-            href="https://unkey.dev"
-            className="underline duration-500 hover:text-zinc-300"
-          >
-            unkey.dev
-          </Link> to solve API authentication and authorization for developers.
+      <div className='hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0' />
+      <div className='my-16 text-center animate-fade-in flex flex-col items-center'>
+        <h2 className='text-sm text-zinc-500 '>
+          Full Stack Engineer & Solutions Architect solving problems for
+          businesses and individuals.
         </h2>
+        <Link
+          href='/about'
+          className='text-sm duration-500 text-zinc-500 hover:text-zinc-300 mt-6 flex items-center gap-2'
+        >
+          <ArrowLongRightIcon className='h-auto w-6' />
+          Learn More
+        </Link>
       </div>
     </div>
   );
-
 }
