@@ -191,7 +191,7 @@ export default async function ProjectsPage() {
               <Card>
                 <Link
                   className='p-4 inline-block'
-                  href='https://hxofehv25u9.typeform.com/to/QWRQM8r1'
+                  href='https://welcome.aguynamedandre.com/'
                   target='_blank'
                 >
                   GET IN TOUCH!
