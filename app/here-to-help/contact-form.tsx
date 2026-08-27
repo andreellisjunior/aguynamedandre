@@ -232,7 +232,7 @@ export function ContactForm({ inquiryType, onClose }: ContactFormProps) {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder='André Ellis Jr.'
+                    placeholder='Johnathan Wick'
                     className={inputBase}
                   />
                 </div>
