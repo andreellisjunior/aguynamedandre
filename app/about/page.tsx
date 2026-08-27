@@ -63,7 +63,7 @@ export default async function ProjectsPage() {
           </h2>
           <p className="mt-4 text-zinc-400">
             I'm a seasoned full stack developer with{' '}
-            {new Date().getFullYear() - 2016} years of experience designing and
+            Over a decade of experience designing and
             developing websites and software applications. Proficient in web
             development, UX design principles, modular systems, and process
             improvement for rapid growth and team management. Skilled in

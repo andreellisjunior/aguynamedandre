@@ -20,11 +20,14 @@ export default async function ProjectsPage() {
         project.slug !== top2.slug &&
         project.slug !== top3.slug
     )
-    .sort(
-      (a, b) =>
-        new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
-        new Date(a.date ?? Number.POSITIVE_INFINITY).getTime()
-    );
+    .sort((a, b) => {
+      const aDate = a.date ? new Date(a.date).getTime() : 0;
+      const bDate = b.date ? new Date(b.date).getTime() : 0;
+      const aYear = a.releaseYear ?? new Date(aDate).getFullYear();
+      const bYear = b.releaseYear ?? new Date(bDate).getFullYear();
+
+      return bYear - aYear || bDate - aDate;
+    });
 
   return (
     <div className='relative pb-16'>

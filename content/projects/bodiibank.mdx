@@ -1,0 +1,76 @@
+---
+title: BodiiBank
+description: A mobile-first calorie-budgeting app that reframes nutrition through the familiar language of earning, spending, and saving.
+releaseYear: 2026
+published: true
+---
+
+## Overview
+
+BodiiBank applies the mental model of personal finance to calorie tracking. Users receive a personalized daily calorie budget, spend from it when they eat, earn credits through activity, and save toward weight-loss goals.
+
+The product replaces moral labels and diet shame with a neutral statement-style ledger. Food is a debit, activity is a credit, and a new day is a fresh deposit—giving users practical information without turning a single choice into a judgment.
+
+## Key Features
+
+### A Calorie Checking Account
+
+- Calculates a personalized daily budget from body measurements, activity level, and chosen pace
+- Shows remaining daily liquidity in a large animated progress ring
+- Records meals as debits and workouts as green credits
+
+### Smart Transaction Logging
+
+- A floating action button opens a focused, full-screen logging flow
+- AI-assisted entry turns a plain-language meal or workout description into structured details
+- Separate debit and credit modes make eating and activity feel meaningfully distinct
+- Backdating shortcuts and a date/time picker make forgotten entries easy to record
+- Every transaction can be edited later, including calories, category, icon, and timestamp
+
+### Statement-Style History
+
+- Groups the ledger by day with readable labels and daily net subtotals
+- Displays exact transaction times so users can reconstruct prior days and weeks
+- Uses clear visual treatment to distinguish spending from earned credits
+
+### Savings Goals and Progress
+
+- Reframes weight-loss targets as savings goals with lost-versus-remaining progress
+- Explains the model in approachable, nontechnical language
+- Projects weekly calorie savings into estimated weight progress
+
+### Consistency Without Shame
+
+- XP, levels, streaks, and achievements recognize useful habits and milestones
+- Encouraging language avoids scolding users for going over budget
+- Metric and imperial preferences carry through onboarding, goals, pace, and every weight display
+
+### Secure, Installable Experience
+
+- Google sign-in and per-user data isolation protect personal records
+- Row Level Security ensures users can access only their own profiles, transactions, and goals
+- Progressive Web App support provides an installable, phone-first experience
+
+## Product Principles
+
+- Calories are currency: budget, spend, earn, and save them
+- A budget is a planning tool, not a moral score
+- Going over is information, not failure
+- Neutral statements make correction easier than shame does
+- Small, consistent savings compound into meaningful progress
+
+## Technical Stack
+
+- React 19 and TypeScript
+- TanStack Start for routing, server rendering, and server functions
+- Tailwind CSS v4 and shadcn/ui
+- Framer Motion for transitions and micro-interactions
+- Recharts for weekly analytics
+- Lovable Cloud with Supabase for authentication, storage, and synchronization
+- Row Level Security for per-user data isolation
+- Progressive Web App manifest for installability
+- Lovable and Vercel deployment infrastructure
+
+## Release
+
+BodiiBank was released in 2026.
