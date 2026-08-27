@@ -94,14 +94,14 @@ export default function HereToHelpPage() {
   }
 
   return (
-    <div className='relative min-h-screen bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900'>
+    <div className='relative min-h-screen overflow-x-hidden bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900'>
       <Navigation />
 
       {/* ── SECTION 1: HERO ─────────────────────────────────────────────────── */}
-      <section className='relative flex flex-col justify-center min-h-[85vh] px-6 mx-auto max-w-5xl lg:px-8 pt-32 pb-20'>
+      <section className='relative flex flex-col justify-center min-h-[85vh] px-6 mx-auto max-w-5xl overflow-hidden lg:px-8 pt-32 pb-20'>
         {/* Background glow */}
         <div
-          className='absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full opacity-[0.06] blur-3xl pointer-events-none'
+          className='absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] max-w-full h-[400px] rounded-full opacity-[0.06] blur-3xl pointer-events-none'
           style={{ background: 'radial-gradient(ellipse, #01B3FF, transparent)' }}
         />
 
@@ -488,7 +488,7 @@ export default function HereToHelpPage() {
       <section className='relative px-6 py-24 md:py-36 mx-auto max-w-5xl lg:px-8 text-center overflow-hidden'>
         {/* Background glow */}
         <div
-          className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] rounded-full opacity-[0.05] blur-3xl pointer-events-none'
+          className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] max-w-full h-[300px] rounded-full opacity-[0.05] blur-3xl pointer-events-none'
           style={{ background: 'radial-gradient(ellipse, #01B3FF, transparent)' }}
         />
 
