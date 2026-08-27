@@ -4,6 +4,7 @@ import { Mdx } from '@/app/components/mdx';
 import { Header } from './header';
 import './mdx.css';
 import { ReportView } from './view';
+import type { Metadata } from 'next';
 
 export const revalidate = 60;
 
@@ -19,6 +20,28 @@ export async function generateStaticParams(): Promise<Props['params'][]> {
     .map((p) => ({
       slug: p.slug,
     }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const project = allProjects.find((item) => item.slug === params.slug);
+
+  if (!project) return {};
+
+  return {
+    title: project.title,
+    description: project.description,
+    openGraph: {
+      title: project.title,
+      description: project.description,
+      images: [],
+    },
+    twitter: {
+      card: 'summary',
+      title: project.title,
+      description: project.description,
+      images: [],
+    },
+  };
 }
 
 export default async function PostPage({ params }: Props) {
