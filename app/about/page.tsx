@@ -87,7 +87,7 @@ export default async function ProjectsPage() {
                   id="featured-post"
                   className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
                 >
-                  {new Date().getFullYear() - 2016} years
+                  {new Date().getFullYear() - 2016}+ years
                 </h2>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   solving problems with technology.
