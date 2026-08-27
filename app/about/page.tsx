@@ -168,68 +168,6 @@ export default async function ProjectsPage() {
           </div>
         </div>
         <div className="hidden w-full h-px md:block bg-zinc-800" />
-        <div>
-          <p className="mt-4 mb-4 text-zinc-400">
-            Check out some good people while here:
-          </p>
-          <div className="grid grid-cols-2 gap-4 mx-auto lg:mx-0 md:grid-cols-6 text-white">
-            <div className="grid grid-cols-1 gap-4">
-              <Card>
-                <Link
-                  className="p-2 inline-block"
-                  href="https://whaies.dev/"
-                  target="_blank"
-                >
-                  whaies.dev
-                </Link>
-              </Card>
-            </div>
-            <div className="grid grid-cols-1 gap-4">
-              <Card>
-                <Link
-                  className="p-2 inline-block"
-                  href="https://andyficek.dev/"
-                  target="_blank"
-                >
-                  andyficek.dev
-                </Link>
-              </Card>
-            </div>
-            <div className="grid grid-cols-1 gap-4">
-              <Card>
-                <Link
-                  className="p-2 inline-block"
-                  href="https://bensievert.dev/"
-                  target="_blank"
-                >
-                  bensievert.dev
-                </Link>
-              </Card>
-            </div>
-            <div className="grid grid-cols-1 gap-4">
-              <Card>
-                <Link
-                  className="p-2 inline-block"
-                  href="https://andrewgilliland.dev/"
-                  target="_blank"
-                >
-                  andrewgilliland.dev
-                </Link>
-              </Card>
-            </div>
-            <div className="grid grid-cols-1 gap-4">
-              <Card>
-                <Link
-                  className="p-2 inline-block"
-                  href="https://jorgecolon.design/"
-                  target="_blank"
-                >
-                  jorgecolon.design
-                </Link>
-              </Card>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
